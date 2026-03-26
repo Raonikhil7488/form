@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Signup Form Project">
+    <title>Signup Form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h2>Signup</h2>
+</header>
+
+<main>
+<form id="signupForm">
+
+    <!-- Full Name -->
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="fullname" required>
+    <small class="error" id="nameError"></small>
+
+    <!-- Email -->
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+    <small class="error" id="emailError"></small>
+
+    <!-- Password -->
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required>
+    <small class="error" id="passwordError"></small>
+
+    <!-- Confirm Password -->
+    <label for="confirm">Confirm Password</label>
+    <input type="password" id="confirm" name="confirmPassword" required>
+    <small class="error" id="confirmError"></small>
+
+    <!-- Date of Birth -->
+    <label for="dob">Date of Birth</label>
+    <input type="date" id="dob" name="dob" required>
+
+    <!-- Role -->
+    <label>Role</label>
+    <div>
+        <input type="radio" id="student" name="role" value="student" required>
+        <label for="student">Student</label>
+
+        <input type="radio" id="employee" name="role" value="employee">
+        <label for="employee">Employee</label>
+    </div>
+
+    <!-- Terms -->
+    <div>
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to all the Terms and conditions</label>
+    </div>
+
+    <!-- Submit -->
+    <button type="submit">Signup</button>
+
+    <!-- Success Message -->
+    <p id="successMsg"></p>
+
+</form>
+</main>
+
+<footer>
+    <p>© 2026 Signup Form</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

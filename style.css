@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: black;
+    color: white;
+    padding: 50px 80px;
+}
+
+/* Heading */
+h2 {
+    font-size: 60px;
+    margin-bottom: 40px;
+}
+
+/* Form layout */
+form {
+    max-width: 800px;
+}
+
+/* Labels */
+label {
+    font-size: 22px;
+    display: block;
+    margin-top: 25px;
+}
+
+/* Inputs (underline style) */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 10px 5px;
+    color: white;
+    font-size: 18px;
+    outline: none;
+}
+
+/* Placeholder */
+input::placeholder {
+    color: #aaa;
+}
+
+/* Focus effect */
+input:focus {
+    border-bottom: 2px solid white;
+}
+
+/* Radio & Checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-top: 20px;
+    margin-right: 8px;
+}
+
+/* Button */
+button {
+    margin-top: 30px;
+    padding: 12px 40px;
+    font-size: 18px;
+    background: lightgray;
+    border: none;
+    cursor: pointer;
+}
+
+/* Button hover */
+button:hover {
+    background: white;
+}
+
+/* Error */
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+/* Success */
+#successMsg {
+    color: lightgreen;
+    margin-top: 10px;
+}
